@@ -35,6 +35,10 @@ export default defineConfig({
       },
     },
   },
+  // CSS optimization
+  css: {
+    devSourcemap: true,
+  },
   // Development server optimization
   server: {
     hmr: {
@@ -44,9 +48,5 @@ export default defineConfig({
   // Preview optimization
   preview: {
     port: 3000,
-  },
-  // CSS optimization
-  css: {
-    devSourcemap: true,
   },
 })

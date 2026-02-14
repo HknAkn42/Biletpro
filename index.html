@@ -7,36 +7,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'ui-sans-serif', 'system-ui'],
-            },
-            colors: {
-              primary: {
-                50: '#f8fafc',
-                100: '#f1f5f9',
-                500: '#3b82f6',
-                600: '#2563eb',
-                900: '#0f172a',
-              },
-            }
-          }
-        }
-      }
-    </script>
+    <link rel="stylesheet" href="./src/index.css" />
     <style>
       body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
       .custom-scrollbar::-webkit-scrollbar { width: 4px; }
       .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
       .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
       .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #cbd5e1; }
-      .premium-shadow { shadow-[0_20px_50px_rgba(0,0,0,0.05)]; }
+      .premium-shadow { box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05); }
     </style>
-  <script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
@@ -45,14 +25,13 @@
     "react": "https://esm.sh/react@^19.2.4",
     "recharts": "https://esm.sh/recharts@^3.7.0",
     "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
-    "html5-qrcode": "https://esm.sh/html5-qrcode@2.3.8"
+    "html5-qrcode": "https://esm.sh/html5-qrcode@^2.3.8"
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
-</head>
+  </head>
   <body class="bg-[#fcfdfe] text-slate-900 selection:bg-blue-100 selection:text-blue-900">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
