@@ -1,15 +1,14 @@
-
 import React, { Suspense, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, Outlet, Navigate } from 'react-router-dom';
-import { AppProvider, useApp } from './context/AppContext';
-import { Sidebar } from './components/Layout/Sidebar';
-import { Header } from './components/Layout/Header';
+import { AppProvider, useApp } from './src/context/AppContext';
+import { Sidebar } from './src/components/Layout/Sidebar';
+import { Header } from './src/components/Layout/Header';
 import { Loader2 } from 'lucide-react';
-import { LazyDashboard, LazyEvents, LazySales, LazyTableLayout, LazyEntrance, LazyStaff, LazyCustomers, LazyReports, LazyOrganizations, LazySaaSFinance, LazyWrapper } from './utils/lazy-loading';
-import { Login } from './pages/Login';
-import { AnnouncementPopup } from './components/Layout/AnnouncementPopup';
+import { LazyDashboard, LazyEvents, LazySales, LazyTableLayout, LazyEntrance, LazyStaff, LazyCustomers, LazyReports, LazyOrganizations, LazySaaSFinance, LazyWrapper } from './src/utils/lazy-loading';
+import { Login } from './src/pages/Login';
+import { AnnouncementPopup } from './src/components/Layout/AnnouncementPopup';
 import { Lock, Phone, CreditCard } from 'lucide-react';
-import { rateLimit, sanitizeInput } from './utils/auth';
+import { rateLimit, sanitizeInput } from './src/utils/auth';
 
 // Protected Route Wrapper
 const RequireAuth: React.FC<{ children: React.ReactNode }> = ({ children }) => {
