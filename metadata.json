@@ -1,0 +1,7 @@
+{
+  "name": "BiletPro",
+  "description": "Professional Event Management & Ticketing System",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
